@@ -2,179 +2,168 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+<div id="logo">
+  <img src="GR3.png" alt="לוגו של סבתא רותי">
 </div>
-		  
+<div id="menu">
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#photos">My Photos</a></li>
+    <li><a href="#playlist">My Playlist</a></li>
+    <li><a href="#like">Like</a></li>
+    <li><a href="#qrcoder">QR code</a></li>
+    <li><a href="#spa">Q&A</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
+</div>
+
 <section id="about" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+  <div class="bio-box">
+    <h2> סבתא רותי</h2>
+    <p>
+רותי כהן, ילידת 1943, נולדה וגדלה בחיפה.
+היא בוגרת תואר ראשון בספרות והשוואת דתות מאוניברסיטת חיפה, ובעלת תעודת הוראה בהיסטוריה.
+במשך יותר מ־30 שנה עבדה כמורה בתיכון עירוני, וזכתה להוקרות על גישתה האישית והערכית לתלמידים.
+דוברת עברית, אנגלית וצרפתית, חובבת צילום וטיפוח גינות אורבניות.
+</p>
+</div>
 </section>
+</section>
+<hr class="section-divider">
+<section id="photos" class="section">
+
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my photos
-<br/>
-<br/>
-<br/>
+  <div class="photo-gallery">
+    <img src="granny_pic2.png" alt="סבתא רותי הרצינית">
+    <img src="granny_funny_pic.png" alt="סבתא רותי עושה צחוקים">
+    <img src="granny_pic.png" alt="סבתא רותי ">
+  </div>
 </section>
+
+<hr class="section-divider">
+<section id="playlist" class="section">
 
 <section id="playlist" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
-<br/>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/f3CLqED3bvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
 </section>
+<hr class="section-divider">
+<section id="like" class="section">
 
 <section id="like" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
-<br/>
+  <div class="like-box">
+    <h2>אהבת את האתר של סבתא רותי?</h2>
+    <p>תן לייק!</p>
+    <button id="like-button">
+       Like <span id="like-count">0</span>
+    </button>
+  </div>
+  </div>
+  <script>
+    let count = 0;
+    const button = document.getElementById('like-button');
+    const counter = document.getElementById('like-count');
+  
+    button.addEventListener('click', () => {
+      count++;
+      counter.textContent = count;
+    });
+  </script>
+
 </section>
+<hr class="section-divider">
+<section id="qrcoder" class="section">
 
 <section id="qrcoder" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-scan my code
-<br/>
-<br/>
-<br/>
+  <div class="qr-box">
+  <h2>  לאתר של סבתא רותי QR קוד </h2>
+  <div class="QRcode">
+    <img src="QRcode.png" alt="code QR">
+  </div>  
+  </div>
 </section>
+
+<hr class="section-divider">
+<section id="spa" class="section">
+
 
 <section id="spa" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-ans
-<br/>
-<br/>
-<br/>
+  <div class="qa-box">
+    <h2>  Q&A </h2>
+    <br>
+
+    <table class="qa-table">
+      <thead>
+        <tr>
+          <th>מאפיין</th>
+          <th>Web 1.0</th>
+          <th>Web 2.0</th>
+          <th>Web 3.0</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>תוכן</td>
+          <td>סטטי בלבד – קריאה בלבד</td>
+          <td>דינמי – משתמשים יוצרים תוכן</td>
+          <td>מבוזר – תוכן נשלט ע״י המשתמשים</td>
+        </tr>
+        <tr>
+          <td>בעלות</td>
+          <td>בידי בעלי אתרים</td>
+          <td>בידי פלטפורמות כמו פייסבוק</td>
+          <td>בידי המשתמשים (בלוקצ׳יין, NFT)</td>
+        </tr>
+        <tr>
+          <td>מעורבות המשתמש</td>
+          <td>צופה בלבד</td>
+          <td>יוצר, מגיב, משתף</td>
+          <td>גם שולט ומרוויח – כלכלה מבוזרת</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="qa-scenario">
+      <h3>תרחיש שימוש: חיפוש מידע על תופעות לוואי של תרופות</h3>
+      <ul>
+        <li><strong>Web 1.0:</strong> תקבל עמודים סטטיים עם טקסט בלבד, כמו אנציקלופדיה או פורטל ישן.</li>
+        <li><strong>Web 2.0:</strong> תראה תגובות של גולשים, המלצות, בלוגים, פוסטים, פייסבוק.</li>
+        <li><strong>Web 3.0:</strong> תוכל לחפש דרך מערכת מבוזרת, לקבל מידע מאומת מקהילות מבוזרות או מומחים, אולי גם לתגמל אותם על תשובות.</li>
+      </ul>
+    </div>
+  </div>
 </section>
+</section>
+<hr class="section-divider">
+<section id="contact" class="section">
 
 <section id="contact" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-contact me
-<br/>
-<br/>
-<br/>
-</section>
-
+  <form id="contact-form">
+    <h2>צור קשר עם סבתא רותי</h2>
+    <label for="email">כתובת מייל שלך:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="message">הודעה:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+  
+    <label for="smiley">בחר חייכן שיתווסף להודעה שלך:</label>
+    <select id="smiley" name="smiley">
+      <option value="🙂">🙂 שמח</option>
+      <option value="😢">😢 עצוב</option>
+      <option value="😂">😂 מצחיק</option>
+      <option value="🤔">🤔 מהורהר</option>
+      <option value="❤️">❤️ אוהב</option>
+    </select>
+  
+    <button type="submit">שלח</button>
+  </form>
+  
+  <div id="confirmation" style="display: none; margin-top: 20px;"></div>
 
 <script type="text/javascript">
 $(function(){
@@ -189,5 +178,7 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+
+
 </body>
 </html>
